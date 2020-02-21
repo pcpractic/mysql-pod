@@ -22,9 +22,6 @@ RUN apt-get update \
  && mkdir /var/run/mysqld \
  && chown -R gitpod:gitpod /etc/mysql /var/run/mysqld /var/log/mysql /var/lib/mysql /var/lib/mysql-files /var/lib/mysql-keyring /var/lib/mysql-upgrade
 
-USER root
-RUN chown -R gitpod:gitpod /etc/resolv.conf
-
 USER gitpod
 
 # Install our own MySQL config
