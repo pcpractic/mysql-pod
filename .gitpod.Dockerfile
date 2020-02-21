@@ -23,8 +23,7 @@ RUN apt-get update \
  && chown -R gitpod:gitpod /etc/mysql /var/run/mysqld /var/log/mysql /var/lib/mysql /var/lib/mysql-files /var/lib/mysql-keyring /var/lib/mysql-upgrade
 
 USER root
-RUN echo "search openebs.svc.cluster.local svc.cluster.local cluster.local your-server.de" >> /etc/resolv.conf
-RUN echo "options ndots:5" >> /etc/resolv.conf
+COPY resolv.conf /etc/
 
 USER gitpod
 
