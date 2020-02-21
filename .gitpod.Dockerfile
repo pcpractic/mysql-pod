@@ -23,7 +23,7 @@ RUN apt-get update \
  && chown -R gitpod:gitpod /etc/mysql /var/run/mysqld /var/log/mysql /var/lib/mysql /var/lib/mysql-files /var/lib/mysql-keyring /var/lib/mysql-upgrade
 
 USER root
-COPY resolv.conf /etc/
+RUN chown -R gitpod:gitpod /etc/resolv.conf
 
 USER gitpod
 
