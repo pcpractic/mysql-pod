@@ -1,7 +1,0 @@
-image:
-  file: .gitpod.Dockerfile
-
-# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
-tasks:
-  - command: cp /workspace/mysql-pod/client.cnf /etc/mysql/mysql.conf.d/client.cnf
-  - command: cd /workspace/mysql-pod && chmod a+rwx mysql-bashrc-launch.sh && ./mysql-bashrc-launch.sh
