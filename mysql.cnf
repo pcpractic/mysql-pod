@@ -10,6 +10,7 @@ port		= 3306
 basedir		= /
 datadir		= /var/lib/mysql
 tmpdir		= /tmp
+lc-messages-dir	= /usr/share/percona-server/
 skip-external-locking
 bind-address		= 0.0.0.0
 
